@@ -19,7 +19,7 @@ pip install django-browser-reload
 ## 2. Create project
 
 ```
-django-admin startproject base .  
+django-admin startproject project_name .
 ```
 
 ## 3. Create application

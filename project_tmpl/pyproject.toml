@@ -1,0 +1,62 @@
+[tool.poetry]
+name = "{{ project_name }}"
+version = "0.1.0"
+description = "insert description here"
+authors = ["William Hayes <william.s.hayes@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^4.1.6"
+django-debug-toolbar = "^3.8.1"
+django-extensions = "^3.2.1"
+django-browser-reload = "^1.6.0"
+django-crispy-forms = "^1.14.0"
+crispy-bootstrap5 = "^0.7"
+python-dotenv = "^0.21.1"
+pywatchman = "^1.4.1"
+
+[tool.poetry.group.dev.dependencies]
+
+# May need to manually install pygraphviz using pip - update locations of graphviz lib and include directory
+# pip install --global-option=build_ext --global-option="-L/opt/homebrew/Cellar/graphviz/7.1.0/lib/" --global-option="-I/opt/homebrew/Cellar/graphviz/7.1.0/include/" pygraphviz
+
+pre-commit = "^3.0.4"
+pywatchman = "^1.4.1"
+djlint = "^1.19.14"
+
+[tool.djlint]
+profile="django"
+format_js=true
+format_css=true
+preserve_blank_lines=true
+max_line_length=120
+
+[tool.black]
+line-length = 100
+target-version = ['py37', 'py38']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  # The following are specific to Black, you probably don't want those.
+  | blib2to3
+  | tests/data
+  | profiling
+)/
+'''
+
+[tool.isort]
+profile = "black"
+src_paths = ["./app"]
+import_heading_stdlib = "Standard Library"
+import_heading_thirdparty = "Third Party"
+import_heading_firstparty = "Local"
