@@ -5,8 +5,8 @@
 
 - Install [poetry](https://python-poetry.org/docs/#installation)
 - Install [watchman](https://facebook.github.io/watchman/docs/install.html) - this is used to watch for file changes for more efficient reloading of the server (https://adamj.eu/tech/2021/01/20/efficient-reloading-in-djangos-runserver-with-watchman/)
-- Start project django project with `django-admin startproject --template=/Users/william.hayes/code/django_template/project_tmpl --extension=py,md,example,gitignore,toml CHANGEME_PROJECT_NAME`
-- Create app with by into `apps` directory next to manage.py and run `django-admin startapp --template=/Users/william.hayes/code/django_template/app_core_tmpl/app_name --extension=py,md,example,gitignore,toml CHANGEME_APP_NAME`
+- Start project django project with `django-admin startproject --template=/Users/william.hayes/code/django_templates/project_tmpl --extension=py,md,example,gitignore,toml CHANGEME_PROJECT_NAME`
+- Create app with by into `apps` directory next to manage.py and run `django-admin startapp --template=/Users/william.hayes/code/django_templates/app_core_tmpl/app_name --extension=py,md,example,gitignore,toml CHANGEME_APP_NAME`
 - Add app to `INSTALLED_APPS` in `settings.py` as 'apps.CHANGEME_APP_NAME'
 - Update project `.env` file with correct values for settings.py
 - Run poetry install `poetry install`

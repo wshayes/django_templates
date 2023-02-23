@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     "django_browser_reload",
     "crispy_forms",
     "crispy_bootstrap5",
-    # "apps.core",  # uncomment this if you want to use the core app
+    "apps.core",
 ]
 
 MIDDLEWARE = [
