@@ -40,6 +40,7 @@ Use the command ([cli options](https://docs.djangoproject.com/en/4.1/ref/django-
 ## Must have Django packages
 
 - [django-debug-toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/) - this will show you a toolbar on the side of the page with useful information
+- [django-watchfiles](https://pypi.org/project/django-watchfiles/) - this will watch for file changes and reload the server, the pywatchman package doesn't work with python 3.10 so this is a good alternative
 - [django-browser-reload](https://github.com/adamchainz/django-browser-reload) - this will reload the browser when you change a template file
 - [django-extensions](https://django-extensions.readthedocs.io/en/latest/index.html) - provides runserver_plus (allows for local https) and other useful management commands
 - [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/index.html) - allows you to easily style forms
@@ -58,6 +59,16 @@ Use the command ([cli options](https://docs.djangoproject.com/en/4.1/ref/django-
 - [Django Cookie Cutter](https://cookiecutter-django.readthedocs.io/en/latest/index.html)
 - [Django Queue](https://django-queue.readthedocs.io/en/latest/) - A simple queueing system for Django
 - [Django Upgrade Tool](https://github.com/adamchainz/django-upgrade)
+- [Simple History](https://github.com/jazzband/django-simple-history) - Capture model changes
+- [Dialog Form](https://github.com/zoltan-ky/django-dialogform) - Django tooling to support Dialogs and Modals
+- [Oso](https://docs.osohq.com/reference/frameworks/django.html) - Oso Django Authorization library
+- [Templated Emails](https://github.com/vintasoftware/django-templated-email)
+- [Safe Delete](https://django-safedelete.readthedocs.io/en/latest/admin.html#module-safedelete.admin) - Easy soft deletes
+- [Notifications](https://github.com/django-notifications/django-notifications) - GitHub notifications alike app for Django
+- [Autocompletes](https://django-autocomplete-light.readthedocs.io/en/master/tutorial.html)
+- [Tables2](https://github.com/jieter/django-tables2) - Tables creation support for Django
+- [Stripe](https://dj-stripe.github.io/dj-stripe/2.7/project/contributing/) - Stripe payment gateway support
+- [Admin Envs](https://github.com/dizballanze/django-admin-env-notice) - ADD TO TEMPLATE!!!
 
 ## Third party packages
 
@@ -68,6 +79,11 @@ Use the command ([cli options](https://docs.djangoproject.com/en/4.1/ref/django-
 - MDBootstrap
 - Sentry/Datadog
 
+## Web Dev Notes
+
+- [Page transitions](https://www.silvestar.codes/articles/transition-between-pages-smoothly-with-a-single-line-of-code/)
+- [TailScan](https://tailscan.com/)
+-
 ## Notes
 
 - You can create some data and then run `python manage.py dumpdata > data.json` to create a fixture file. You can then load this data into a new database with `python manage.py loaddata data.json`
