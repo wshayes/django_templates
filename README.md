@@ -32,9 +32,7 @@ Use the command ([cli options](https://docs.djangoproject.com/en/4.1/ref/django-
 ## Useful commands
 
   - `./manage.py graph_models -a -g -o my_project_visualized.png` - this will generate a diagram of the models in your project - requires [django-extensions](https://django-extensions.readthedocs.io/en/latest/graph_models.html) and pygraphviz to be installed
-    - May need to manually install pygraphviz using pip instead of poetry in order to add locations of graphviz lib and include directory when building the package extensions
-`pip install --global-option=build_ext --global-option="-L/opt/homebrew/Cellar/graphviz/7.1.0/lib/" --global-option="-I/opt/homebrew/Cellar/graphviz/7.1.0/include/" pygraphviz`
-
+    - May need to manually install pygraphviz using pip instead of poetry in order to add locations of graphviz lib and include directory when building the package extensions `pip install --global-option=build_ext --global-option="-L/opt/homebrew/Cellar/graphviz/7.1.0/lib/" --global-option="-I/opt/homebrew/Cellar/graphviz/7.1.0/include/" pygraphviz`
 
 
 ## Must have Django packages
@@ -79,17 +77,28 @@ Use the command ([cli options](https://docs.djangoproject.com/en/4.1/ref/django-
 - MDBootstrap
 - Sentry/Datadog
 
-## Web Dev Notes
 
-- [Page transitions](https://www.silvestar.codes/articles/transition-between-pages-smoothly-with-a-single-line-of-code/)
-- [TailScan](https://tailscan.com/)
--
-## Notes
+# Notes
 
 - You can create some data and then run `python manage.py dumpdata > data.json` to create a fixture file. You can then load this data into a new database with `python manage.py loaddata data.json`
 - You can create a superuser with `python manage.py createsuperuser`
 - You can run the tests with `python manage.py test`
 - You can run the server with `python manage.py runserver`
+- [Page transitions](https://www.silvestar.codes/articles/transition-between-pages-smoothly-with-a-single-line-of-code/)
+- [TailScan](https://tailscan.com/)
+- [Tailwind Cheat Sheet](https://nerdcave.com/tailwind-cheat-sheet)
+- [Sidewinder - Django project template](https://github.com/stribny/sidewinder)
+- 
+## Django HTMX/Alpine/Tailwind Notes
+
+What is the best package below for supporting re-usable components in Django or supporting HTMX functionality?
+
+- [Django Render Block](https://github.com/clokep/django-render-block) - allows you to render a named block from a template in a HTMX call 
+- [Django Template Partials](https://github.com/carltongibson/django-template-partials) - Reusable named inline partials for the Django Template Language.
+- [Django Slippers](https://mitchel.me/slippers/) - Slippers includes a number of extra template tags and filters to help template authors build reusable components.
+
+
+
 
 ## Tutorials and examples
 
@@ -129,3 +138,6 @@ Using startproject and startapp with templates
 ## <a name="figure_1">Figure 1 - Django project structure</a>
 
 <img src="project_tmpl/media/django_project_structure.webp" alt="drawing" width="800"/>
+$$
+
+$$

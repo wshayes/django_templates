@@ -21,4 +21,7 @@ urlpatterns = [
     path("__debug__/", include("debug_toolbar.urls")),
     path("__reload__/", include("django_browser_reload.urls")),
     path("", include("apps.core.urls")),
+    # Uncomment following if using custom user model in the accounts_tmpl app
+    # path("accounts/", include("accounts.urls")),
+    # path("accounts/", include("django.contrib.auth.urls")),
 ]

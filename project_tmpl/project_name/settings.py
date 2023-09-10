@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "crispy_forms",
     "crispy_bootstrap5",
     "apps.core",
+    #    "apps.accounts",  # uncomment if using custom user model with the accounts_tmpl app
 ]
 
 MIDDLEWARE = [
@@ -154,3 +155,10 @@ if DEBUG:
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 CRISPY_FAIL_SILENTLY = not DEBUG
+
+##############################################################
+# Custom User Model
+##############################################################
+
+# LOGIN_REDIRECT_URL = "home"
+# LOGOUT_REDIRECT_URL = "home"
