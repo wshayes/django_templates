@@ -88,7 +88,8 @@ Use the command ([cli options](https://docs.djangoproject.com/en/4.1/ref/django-
 - [TailScan](https://tailscan.com/)
 - [Tailwind Cheat Sheet](https://nerdcave.com/tailwind-cheat-sheet)
 - [Sidewinder - Django project template](https://github.com/stribny/sidewinder)
-- 
+- AWS S3 pre-signed URLs - https://www.reddit.com/r/django/comments/1gikw07/django_upload_to_s3_using_presigned_urls_tip/?share_id=VYDGFuuKAlQiskcCtVD9X&utm_content=1&utm_medium=ios_app&utm_name=iossmf&utm_source=share&utm_term=22&rdt=38509 
+ 
 ## Django HTMX/Alpine/Tailwind Notes
 
 What is the best package below for supporting re-usable components in Django or supporting HTMX functionality?
