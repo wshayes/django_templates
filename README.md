@@ -46,6 +46,7 @@ Use the command ([cli options](https://docs.djangoproject.com/en/4.1/ref/django-
 ## Nice to have Django packages
 
 - django-widget-tweaks - this will allow you to add classes to form fields
+- [Django Axes](https://medium.com/django-unleashed/enhancing-django-security-prevent-brute-force-attacks-with-django-axes-6cf50a15711d) - block bad login attempts
 - Django Ninja - FastAPI-like Rest Framework for Django
 - Django Import Export - Allows you to import/export data via Excel, CSV, JSON, YAML via the Admin interface
 - Django Tenants
